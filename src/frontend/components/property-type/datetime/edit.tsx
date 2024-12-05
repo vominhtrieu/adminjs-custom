@@ -30,6 +30,7 @@ const Edit: React.FC<EditPropertyProps> = (props) => {
         value={value}
         disabled={property.isDisabled}
         onChange={(date) => {
+          console.log('date', date);
           onChange(
             property.path,
             property.type === 'date' ? stripTimeFromISO(date) ?? date : date,
