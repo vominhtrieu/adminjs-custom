@@ -1,10 +1,8 @@
 import { SetDrawerPreRouteResponse } from '../actions/set-drawer-preroute.js';
 export type DrawerInState = SetDrawerPreRouteResponse['data'];
-export declare const drawerReducer: (state: {
-    previousRoute: Partial<import("react-router").Location> | null;
-} | undefined, action: {
+export declare const drawerReducer: (state: DrawerInState | undefined, action: {
     type: string;
     data: DrawerInState;
 }) => {
-    previousRoute: Partial<import("react-router").Location> | null;
+    previousRoute: Partial<ReturnType<typeof import("react-router").useLocation>> | null;
 };

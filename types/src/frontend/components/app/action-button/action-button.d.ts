@@ -34,7 +34,6 @@ export type ActionButtonProps = {
  */
 declare const ActionButton: React.FC<ActionButtonProps>;
 declare const OverridableActionButton: React.ComponentType<ActionButtonProps & {
-    /** Optional recordId for _record_ action */
     OriginalComponent?: React.ComponentType<ActionButtonProps> | undefined;
 }>;
 export { OverridableActionButton as default, OverridableActionButton as ActionButton, ActionButton as OriginalActionButton, };

@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 export * from './new.js';
 export * from './action.props.js';
 export * from './edit.js';
@@ -20,12 +19,12 @@ export declare const actions: {
         OriginalComponent?: import("react").ComponentType<import("./action.props.js").ActionProps> | undefined;
     }>;
     bulkDelete: import("react").ComponentType<{
-        context?: import("react").Context<import("react-redux").ReactReduxContextValue<any, import("redux").AnyAction>> | undefined;
-        store?: import("redux").Store<any, import("redux").AnyAction> | undefined;
+        context?: import("react-redux/es/components/Context.js").ReactReduxContextInstance | undefined;
+        store?: import("redux").Store | undefined;
     } & {
         OriginalComponent?: import("react").ComponentType<{
-            context?: import("react").Context<import("react-redux").ReactReduxContextValue<any, import("redux").AnyAction>> | undefined;
-            store?: import("redux").Store<any, import("redux").AnyAction> | undefined;
+            context?: import("react-redux/es/components/Context.js").ReactReduxContextInstance | undefined;
+            store?: import("redux").Store | undefined;
         }> | undefined;
     }>;
 };

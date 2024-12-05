@@ -9,4 +9,4 @@ export type actionsToButtonGroupOptions = {
     translateFunctions: TranslateFunctions;
     modalFunctions: ModalFunctions;
 };
-export declare const actionsToButtonGroup: (options: actionsToButtonGroupOptions) => ButtonGroupProps['buttons'];
+export declare const actionsToButtonGroup: (options: actionsToButtonGroupOptions) => ButtonGroupProps["buttons"];

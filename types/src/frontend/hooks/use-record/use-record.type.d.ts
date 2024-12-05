@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import { AxiosResponse } from 'axios';
 import { OnPropertyChange } from '../../components/property-type/base-property-props.js';
 import { RecordActionResponse } from '../../../backend/actions/action.interface.js';

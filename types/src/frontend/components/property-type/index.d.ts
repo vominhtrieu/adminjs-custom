@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import CleanPropertyComponent from './clean-property-component.js';
 import { BasePropertyComponentProps } from './base-property-props.js';
 type BasePropertyComponentType = React.FC<BasePropertyComponentProps> & {

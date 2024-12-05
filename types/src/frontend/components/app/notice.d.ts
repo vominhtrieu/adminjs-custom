@@ -18,16 +18,16 @@ type NoticeBoxDispatchFromState = {
     notifyProgress: NotifyProgress;
 };
 declare const ConnectedNoticeBox: import("react-redux").ConnectedComponent<React.FC<NoticeBoxPropsFromState & NoticeBoxDispatchFromState>, {
-    context?: React.Context<import("react-redux").ReactReduxContextValue<any, import("redux").AnyAction>> | undefined;
-    store?: import("redux").Store<any, import("redux").AnyAction> | undefined;
+    context?: import("react-redux/es/components/Context.js").ReactReduxContextInstance | undefined;
+    store?: import("redux").Store | undefined;
 }>;
 declare const OverridableConnectedNoticeBox: React.ComponentType<{
-    context?: React.Context<import("react-redux").ReactReduxContextValue<any, import("redux").AnyAction>> | undefined;
-    store?: import("redux").Store<any, import("redux").AnyAction> | undefined;
+    context?: import("react-redux/es/components/Context.js").ReactReduxContextInstance | undefined;
+    store?: import("redux").Store | undefined;
 } & {
     OriginalComponent?: React.ComponentType<{
-        context?: React.Context<import("react-redux").ReactReduxContextValue<any, import("redux").AnyAction>> | undefined;
-        store?: import("redux").Store<any, import("redux").AnyAction> | undefined;
+        context?: import("react-redux/es/components/Context.js").ReactReduxContextInstance | undefined;
+        store?: import("redux").Store | undefined;
     }> | undefined;
 }>;
 export { OverridableConnectedNoticeBox as NoticeBox, OverridableConnectedNoticeBox as default, ConnectedNoticeBox as OriginalNoticeBox, };

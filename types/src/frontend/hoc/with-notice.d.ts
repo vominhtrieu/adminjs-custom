@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import { NoticeMessage } from '../interfaces/noticeMessage.interface.js';
 /**
  * Additional props which are passed to your component
@@ -32,7 +31,7 @@ export type AddNoticeProps = {
  * @subcategory HOC
  */
 declare const withNotice: (Component: any) => import("react-redux").ConnectedComponent<any, {
-    context?: import("react").Context<import("react-redux").ReactReduxContextValue<any, import("redux").AnyAction>> | undefined;
-    store?: import("redux").Store<any, import("redux").AnyAction> | undefined;
+    context?: import("react-redux/es/components/Context.js").ReactReduxContextInstance | undefined;
+    store?: import("redux").Store | undefined;
 }>;
 export { withNotice as default, withNotice };

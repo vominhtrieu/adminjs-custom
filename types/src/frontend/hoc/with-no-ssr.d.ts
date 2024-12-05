@@ -6,5 +6,5 @@ import React, { ComponentType } from 'react';
  * @param {React.ComponentType<P>} Component - The component to be wrapped
  * @returns {React.FC<P>} A new component that renders the given component client-side only
  */
-declare const withNoSSR: <P extends Record<string, unknown>>(Component: React.ComponentType<P>) => (props: P) => JSX.Element | null;
+declare const withNoSSR: <P extends Record<string, unknown>>(Component: ComponentType<P>) => (props: P) => React.JSX.Element | null;
 export { withNoSSR as default, withNoSSR, };

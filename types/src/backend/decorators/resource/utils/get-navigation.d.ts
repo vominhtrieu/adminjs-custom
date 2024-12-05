@@ -7,4 +7,4 @@ export type DatabaseData = {
 };
 export declare const DEFAULT_ICON = "Archive";
 export declare const getIcon: (icon?: SupportedDatabasesType | string) => string;
-export declare const getNavigation: (options: ResourceOptions, database: DatabaseData) => ResourceJSON['navigation'];
+export declare const getNavigation: (options: ResourceOptions, database: DatabaseData) => ResourceJSON["navigation"];
